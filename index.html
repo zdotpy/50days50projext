@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,150 +11,94 @@
 <style>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  font-family:'Poppins',sans-serif;
-  min-height:100vh;
-  background:
-  radial-gradient(circle at top left,#1f1f3a,transparent 30%),
-  radial-gradient(circle at bottom right,#0f3460,transparent 30%),
-  #070b14;
-  padding:40px;
-  color:white;
-  overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:#070b14;
+min-height:100vh;
+padding:40px;
+color:white;
 }
 
-body::before{
-  content:'';
-  position:fixed;
-  inset:0;
-  background-image:
-  linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size:40px 40px;
-  z-index:-2;
-}
-
-.glow{
-  position:fixed;
-  width:500px;
-  height:500px;
-  background:#5b5bff;
-  border-radius:50%;
-  filter:blur(140px);
-  opacity:.2;
-  top:-150px;
-  right:-150px;
-  z-index:-1;
-}
-
-.container{
-  max-width:1400px;
-  margin:auto;
-}
-
-.title{
-  margin-bottom:50px;
-}
-
-.title h1{
-  font-size:4rem;
-  background:linear-gradient(90deg,#fff,#7f8cff);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-.title p{
-  color:#aeb7ff;
-  margin-top:10px;
+h1{
+font-size:4rem;
+margin-bottom:50px;
+background:linear-gradient(90deg,#fff,#7f8cff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-  position:relative;
-  overflow:hidden;
-  padding:30px;
-  border-radius:24px;
-  text-decoration:none;
-  color:white;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.08);
-  backdrop-filter:blur(12px);
-  transition:.35s;
-  min-height:220px;
+background:#111827;
+border:1px solid #2b3548;
+border-radius:24px;
+padding:30px;
+min-height:220px;
+text-decoration:none;
+color:white;
+transition:.3s;
+position:relative;
+overflow:hidden;
 }
 
 .card:hover{
-  transform:translateY(-10px) scale(1.03);
-  border-color:#7f8cff;
-  box-shadow:
-  0 20px 50px rgba(91,91,255,.25),
-  0 0 20px rgba(91,91,255,.15);
+transform:translateY(-10px);
+border-color:#6d7cff;
+box-shadow:0 15px 40px rgba(109,124,255,.25);
 }
 
 .card::before{
-  content:'';
-  position:absolute;
-  width:180px;
-  height:180px;
-  border-radius:50%;
-  background:linear-gradient(135deg,#7f8cff,#4f46e5);
-  top:-80px;
-  right:-80px;
-  opacity:.18;
+content:'';
+position:absolute;
+width:180px;
+height:180px;
+background:linear-gradient(135deg,#7f8cff,#4f46e5);
+border-radius:50%;
+top:-80px;
+right:-80px;
+opacity:.18;
 }
 
 .badge{
-  position:absolute;
-  top:18px;
-  right:18px;
-  padding:7px 12px;
-  border-radius:999px;
-  background:rgba(255,255,255,0.08);
-  font-size:.8rem;
-  color:#d6dcff;
+position:absolute;
+top:20px;
+right:20px;
+background:#1e293b;
+padding:8px 14px;
+border-radius:999px;
+font-size:.8rem;
+color:#cbd5e1;
 }
 
 .number{
-  color:#8f9bff;
-  font-size:.9rem;
-  letter-spacing:2px;
-  margin-bottom:16px;
-  text-transform:uppercase;
+font-size:.9rem;
+letter-spacing:2px;
+color:#94a3ff;
+margin-bottom:18px;
+text-transform:uppercase;
 }
 
 .project-name{
-  font-size:1.5rem;
-  font-weight:600;
-  margin-bottom:20px;
+font-size:1.6rem;
+font-weight:600;
+margin-bottom:25px;
 }
 
 .open{
-  position:absolute;
-  bottom:28px;
-  left:30px;
-  color:#dfe3ff;
-}
-
-@media(max-width:700px){
-
-  body{
-    padding:25px;
-  }
-
-  .title h1{
-    font-size:2.8rem;
-  }
-
+position:absolute;
+bottom:30px;
+left:30px;
+color:#dbe4ff;
 }
 
 </style>
@@ -163,62 +106,213 @@ body::before{
 
 <body>
 
-<div class="glow"></div>
+<h1>PROJECTS</h1>
 
-<div class="container">
+<div class="projects">
 
-  <div class="title">
-    <h1>PROJECTS</h1>
-    <p>My cool builds collection</p>
-  </div>
+<a class="card" href="pro1/index.html">
+<div class="badge">01</div>
+<div class="number">Project 1</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-  <div class="projects">
+<a class="card" href="pro2/index.html">
+<div class="badge">02</div>
+<div class="number">Project 2</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-    <a class="card" href="pro1/index.html">
-      <div class="badge">01</div>
-      <div class="number">Project 1</div>
-      <div class="project-name">...</div>
-      <div class="open">Open Project →</div>
-    </a>
+<a class="card" href="pro3/index.html">
+<div class="badge">03</div>
+<div class="number">Project 3</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-    <a class="card" href="pro2/index.html">
-      <div class="badge">02</div>
-      <div class="number">Project 2</div>
-      <div class="project-name">...</div>
-      <div class="open">Open Project →</div>
-    </a>
+<a class="card" href="pro4/index.html">
+<div class="badge">04</div>
+<div class="number">Project 4</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-    <a class="card" href="pro3/index.html">
-      <div class="badge">03</div>
-      <div class="number">Project 3</div>
-      <div class="project-name">...</div>
-      <div class="open">Open Project →</div>
-    </a>
+<a class="card" href="pro5/index.html">
+<div class="badge">05</div>
+<div class="number">Project 5</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-    <a class="card" href="pro4/index.html">
-      <div class="badge">04</div>
-      <div class="number">Project 4</div>
-      <div class="project-name">...</div>
-      <div class="open">Open Project →</div>
-    </a>
+<a class="card" href="pro6/index.html">
+<div class="badge">06</div>
+<div class="number">Project 6</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-    <a class="card" href="pro5/index.html">
-      <div class="badge">05</div>
-      <div class="number">Project 5</div>
-      <div class="project-name">...</div>
-      <div class="open">Open Project →</div>
-    </a>
+<a class="card" href="pro7/index.html">
+<div class="badge">07</div>
+<div class="number">Project 7</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-    <a class="card" href="pro6/index.html">
-      <div class="badge">06</div>
-      <div class="number">Project 6</div>
-      <div class="project-name">...</div>
-      <div class="open">Open Project →</div>
-    </a>
+<a class="card" href="pro8/index.html">
+<div class="badge">08</div>
+<div class="number">Project 8</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-    <!-- COPY MORE UNTIL pro30 -->
+<a class="card" href="pro9/index.html">
+<div class="badge">09</div>
+<div class="number">Project 9</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
-  </div>
+<a class="card" href="pro10/index.html">
+<div class="badge">10</div>
+<div class="number">Project 10</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro11/index.html">
+<div class="badge">11</div>
+<div class="number">Project 11</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro12/index.html">
+<div class="badge">12</div>
+<div class="number">Project 12</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro13/index.html">
+<div class="badge">13</div>
+<div class="number">Project 13</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro14/index.html">
+<div class="badge">14</div>
+<div class="number">Project 14</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro15/index.html">
+<div class="badge">15</div>
+<div class="number">Project 15</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro16/index.html">
+<div class="badge">16</div>
+<div class="number">Project 16</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro17/index.html">
+<div class="badge">17</div>
+<div class="number">Project 17</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro18/index.html">
+<div class="badge">18</div>
+<div class="number">Project 18</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro19/index.html">
+<div class="badge">19</div>
+<div class="number">Project 19</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro20/index.html">
+<div class="badge">20</div>
+<div class="number">Project 20</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro21/index.html">
+<div class="badge">21</div>
+<div class="number">Project 21</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro22/index.html">
+<div class="badge">22</div>
+<div class="number">Project 22</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro23/index.html">
+<div class="badge">23</div>
+<div class="number">Project 23</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+
+<a class="card" href="pro25/index.html">
+<div class="badge">25</div>
+<div class="number">Project 25</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro26/index.html">
+<div class="badge">26</div>
+<div class="number">Project 26</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro27/index.html">
+<div class="badge">27</div>
+<div class="number">Project 27</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro28/index.html">
+<div class="badge">28</div>
+<div class="number">Project 28</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro29/index.html">
+<div class="badge">29</div>
+<div class="number">Project 29</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
+
+<a class="card" href="pro30/index.html">
+<div class="badge">30</div>
+<div class="number">Project 30</div>
+<div class="project-name">...</div>
+<div class="open">Open Project →</div>
+</a>
 
 </div>
 
